@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.learning.kafka'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.apache.kafka', name: 'kafka-clients', version: '2.3.0'
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.5'
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.6.4'
+    testImplementation group: 'com.salesforce.kafka.test', name: 'kafka-junit4', version: '3.2.2'
+    testImplementation group: 'org.apache.kafka', name: 'kafka_2.12', version: '2.6.0'
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
